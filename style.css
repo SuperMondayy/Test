@@ -7,7 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Site container to align header/footer/content */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -24,7 +23,7 @@ body {
 /* Top Bar */
 .top-bar {
   background: #f5f5f5;
-  padding: 8px 16px; /* align with container */
+  padding: 8px 16px;
   text-align: left;
   font-size: 13px;
   color: #555;
@@ -89,7 +88,7 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 24px; /* khoảng cách giữa 2 phần */
+  gap: 24px;
   justify-self: end;
 }
 
@@ -99,13 +98,13 @@ body {
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 6px; /* khoảng cách icon và text */
+  gap: 6px;
   font-size: 15px;
 }
 .header-right img {
   width: 20px;
   height: 20px;
-  vertical-align: middle; /* canh giữa theo text */
+  vertical-align: middle;
   object-fit: contain;
 }
 .header-right a:hover {
@@ -245,7 +244,7 @@ body {
 .section-header img {
   width: 20px;
   height: 20px;
-  vertical-align: middle; /* canh giữa theo text */
+  vertical-align: middle;
   object-fit: contain;
   margin-bottom: 4px;
 }
@@ -259,8 +258,8 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 290px; /* độ dài thanh */
-  height: 3px; /* độ dày thanh */
+  width: 290px;
+  height: 3px;
   background-color: #0078ff;
   border-radius: 2px;
 }
@@ -374,7 +373,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #0082ca; /* nền xanh dương tươi */
+  background-color: #0082ca;
   color: #fff;
   padding: 60px 30px 30px;
   font-family: "HK Grotesk", sans-serif;
@@ -393,9 +392,9 @@ body {
   margin-right: auto;
 }
 .footer-logo {
-  flex: 0 0 25%; /* cột đầu chiếm nhiều không gian hơn */
+  flex: 0 0 25%;
   margin-right: 40px;
-  text-align: left; /*  tạo khoảng cách lớn với 2 cột còn lại */
+  text-align: left;
 }
 
 .footer-column {
@@ -456,7 +455,7 @@ body {
 .contact-item img {
   width: 20px;
   height: 20px;
-  margin-top: 10px; /* căn giữa icon theo chữ */
+  margin-top: 10px;
 }
 
 .contact-name {
@@ -530,7 +529,7 @@ body {
   font-size: 13px;
 }
 .hamburger {
-  display: none; /* ẩn khi desktop */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -548,7 +547,7 @@ body {
     gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column; /* chuyển về dọc */
+    flex-direction: column;
     align-items: stretch;
   }
 
@@ -585,7 +584,6 @@ body {
   }
 }
 
-/* Hamburger and mobile header adjustments */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -629,7 +627,6 @@ body {
     top: 7px;
   }
 
-  /* stack header content on small screens */
   .header .container {
     display: grid;
     grid-template-columns: auto auto; /* logo và hamburger chung hàng */
@@ -651,7 +648,6 @@ body {
     justify-self: center;
   }
 
-  /* make navbar toggleable (JS will toggle .open) */
   .navbar {
     max-height: 0;
     overflow: hidden;
@@ -663,7 +659,6 @@ body {
   }
 }
 
-/* Hide hamburger on larger screens */
 @media (min-width: 769px) {
   .hamburger {
     display: none;

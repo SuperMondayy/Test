@@ -1,4 +1,3 @@
-// Simple banner slider (you can expand it later)
 let currentSlide = 0;
 const slides = [
   {
@@ -17,7 +16,6 @@ const bannerText = document.querySelector(".banner-text h2");
 const bannerImg = document.querySelector(".banner-content img");
 const bannerSubtitle = document.querySelector(".banner-text .subtitle");
 
-// Hamburger toggle for mobile
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".navbar");
 if (hamburger && navbar) {
@@ -25,7 +23,7 @@ if (hamburger && navbar) {
     navbar.classList.toggle("open");
     hamburger.classList.toggle("is-active");
   });
-  // close navbar when a link is clicked (good UX)
+
   navbar.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
       navbar.classList.remove("open");
